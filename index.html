@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+</head>
+<body>
+
+    <button id="botonInicio" onclick="irInicio()">⌂ Inicio</button>
+
+    <!-- PANTALLA PRINCIPAL -->
+    <div id="principal">
+        <button id="botonPracticar" onclick="mostrarTemas('practicar')">Practicar</button>
+        <button id="botonEstudiar" onclick="mostrarTemas('estudiar')">Estudiar</button>
+    </div>
+
+    <!-- MENÚ DE PRACTICAR -->
+    <div id="menuPracticar" class="menu">
+        <h1>Practicar</h1>
+        <button onclick="abrirPantalla('fracciones')">Fracciones</button>
+        <button onclick="abrirPantalla('algebra')">Álgebra</button>
+        <button onclick="abrirPantalla('aritmetica')">Aritmética</button>
+    </div>
+
+    <!-- MENÚ DE ESTUDIAR -->
+    <div id="menuEstudiar" class="menu">
+        <h1>Estudiar</h1>
+        <button onclick="abrirPantalla('productosNotables')">Productos Notables</button>
+        <button onclick="abrirPantalla('exponentes')">Propiedades de los exponentes</button>
+        <button onclick="abrirPantalla('pruebas')">Pruebas</button>
+    </div>
+
+    <!-- PANTALLAS DE PRACTICAR -->
+    <div id="fracciones" class="pantalla">
+        <h1>Practicar: Fracciones</h1>
+        <p>Aquí pondremos los ejercicios de fracciones.</p>
+    </div>
+
+    <div id="algebra" class="pantalla">
+        <h1>Practicar: Álgebra</h1>
+        <p>Aquí pondremos los ejercicios de álgebra.</p>
+    </div>
+
+    <div id="aritmetica" class="pantalla">
+        <h1>Practicar: Aritmética</h1>
+        <p>Aquí pondremos los ejercicios de aritmética.</p>
+    </div>
+
+    <!-- PANTALLAS DE ESTUDIAR -->
+    <div id="productosNotables" class="pantalla">
+        <h1>Productos Notables</h1>
+        <p><strong>Binomio al cuadrado:</strong></p>
+        <p>\[ (a \pm b)^2 = a^2 \pm 2ab + b^2 \]</p>
+        <p>ejemplo: \( (x+3)^2 = (x)^2+2(x)(3) + (3)^2 = x^2 + 6x + 9 \)</p>
+        <p>ejemplo: \( (x-5)^2 = (x)^2+2(x)(-5) + (-5)^2 = x^2 - 10x + 25 \)</p>
+        <p class="espacio"> </p>
+
+        <p><strong>Binomio conjugado:</strong></p>
+        <p>\[ (a + b)(a - b) = a^2 - b^2 \]</p>
+        <p class="espacio"> </p>
+
+        <p><strong>Binomio al cubo:</strong></p>
+        <p>\[ (a \pm b)^3 = a^3 \pm 3a^2b + 3ab^2 \pm b^3 \]</p>
+        <p class="espacio"> </p>
+        
+        <p><strong>Binomio con término común:</strong></p>
+        <p>\[ (x + a)(x + b) = x^2 + (a + b)x + ab \]</p>
+    </div>
+
+    <div id="exponentes" class="pantalla">
+        <h1>Propiedades de los exponentes</h1>
+        <p><strong>Propiedades básicas:</strong></p>
+        <p> \( x^n\cdot x^m = x^{n+m} \)</p>
+        <p> \( \frac{x^n}{x^m} = x^{n-m} \)</p>
+        <p> \( (x^n)^m = x^{n\cdot m} \)</p>
+        <p> \( \sqrt[n]{x^m} = x^{m/n} \)</p>
+
+        <p><strong>Propiedades de distribución:</strong></p>
+        <p> \( (xy)^n = x^n y^n \)</p>
+        <p> \( \left(\frac{x}{y}\right)^n = \frac{x^n}{y^n} \)</p>
+    </div>
+
+    <div id="pruebas" class="pantalla">
+        <h1>Pruebas de botones</h1>
+        <p>Aquí pondremos la teoría de los sistemas numéricos.</p>
+        <button onclick="abrirPantalla('pruebas2')">Pruebas2</button>
+    </div>
+
+    <div id="pruebas2" class="pantalla">
+        <h1>+botones</h1>
+        <p>TE AMO MONTSE</p>
+        <p>Una fracción: \( \frac{1}{2} \)</p>
+
+        <p>Una potencia: \( x^2 \)</p>
+
+        <p>Una raíz: \( \sqrt{25} \)</p>
+
+        <p>Una ecuación:</p>
+
+        <p>\[ x^2 + 2x + 1 = 0 \]</p>
+    </div>
+
+    <script src="script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+</body>
+</html>

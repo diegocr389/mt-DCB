@@ -1,0 +1,68 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Pantalla principal */
+#principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#principal button {
+    flex: 1;
+    font-size: 30px;
+}
+#botonPracticar {
+    background-color: blue;
+    color: white;
+}
+
+#botonEstudiar {
+    background-color: orange;
+    color: white;
+}
+
+/* Botón fijo de Inicio */
+#botonInicio {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Menús y pantallas secundarias */
+.menu,
+.pantalla {
+    display: none;
+    padding: 20px;
+    padding-top: 65px;
+}
+
+/* Botones de los menús */
+.menu button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#menuPracticar {
+    background-color: blue;
+    color: white;
+    min-height: 100vh;
+}
+#menuEstudiar {
+    background-color: orange;
+    color: white;
+    min-height: 100vh;
+}
+.espacio {
+    margin-bottom: 50px;
+}
